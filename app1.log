@@ -1,0 +1,8 @@
+CRITICAL:root:host www.python.org unknown
+ERROR:root:couldn't find item 'spam'
+WARNING:root:dep
+INFO:root:Opening file 'data.csv', mode='r'
+CRITICAL:root:host www.python.org unknown
+ERROR:root:couldn't find item 'spam'
+WARNING:root:dep
+INFO:root:Opening file 'data.csv', mode='r'

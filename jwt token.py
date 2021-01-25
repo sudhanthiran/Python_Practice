@@ -1,0 +1,8 @@
+from jwcrypto import jwt, jwk
+
+key = jwk.JWK(generate='oct', size=256)
+print(key.export())
+
+# token = u'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXlsb2FkIjoiSUxFVXlVaVJaU0daUmYvS1E0N0MzUjVmVGFtSnZDTWg4OTFtTWpHbm93RDhLK21NUzZ1T055SWxta3hpNE4vanpWQTVmU1NFM0N6SlFqdGV6ME93STJ0clhFVld6dWR4WDdsaXZxZ3dPd1lnTGxXUm5sdnBmbUUrTzI0WjhSV2YxSkZlT3FkaGdvaEpkS1RTb1ZHa2xPRGdiTFJuVjZXRVNFVkppWm9aT29FPSIsImlzcyI6InNpcmlvbiIsImV4cCI6MTU3NjUwNjM2Nn0.nShqnFe__wn8AagbO0PnXOpdEsWnM7FOoHOSKGC6cx0'
+#
+# token.deserialize(key)
