@@ -29,7 +29,7 @@ class FB_Dummy(person):
     def friend(self, friend_to_add: str):
         self.friend_list.append(friend_to_add.Name)  ## need to handle duplicates
     def unfriend(self, friend_to_remove: str):
-        index_to_del = self.friend_list.index(friend_to_remove)
+        index_to_del = self.friend_list.index(friend_to_remove.Name)
         self.friend_list.__delitem__(index_to_del)
 
     def info(self):
@@ -38,10 +38,15 @@ class FB_Dummy(person):
 
 obj1 = FB_Dummy("tom","nyc")
 obj2 = FB_Dummy("sam","tokyo")
+obj3 = FB_Dummy("nikhil","RJ")
 #obj3 = FB_Dummy("bob","london")
 
 obj1.friend(obj2)
+obj1.friend(obj3)
 #obj1.add("bob")
 
+
+print(obj1.friend_list)
+obj1.unfriend(obj3)
 print(obj1.friend_list)
 
