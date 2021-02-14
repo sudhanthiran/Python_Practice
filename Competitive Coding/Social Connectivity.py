@@ -15,7 +15,7 @@ class person():
         self.user_list = []
     def add(self, Name, user_name):
         self.user_list.append(user_name.Name)  ## need to handle duplicates
-    def remove(self, user_to_remove: str):
+    def remove(self, user_to_remove):
         index_to_del = self.user_list.index(user_to_remove)
         self.user_list.__delitem__(index_to_del)
 
@@ -24,11 +24,11 @@ class FB_Dummy(person):
     def __init__(self,Name, City):
         super().__init__(Name,City)
         self.friend_list = []
-    def add(self,object):
+    def add(self,object : person):
         super().add(self.Name,object.Name)
-    def friend(self, friend_to_add: str):
+    def friend(self, friend_to_add: person):
         self.friend_list.append(friend_to_add.Name)  ## need to handle duplicates
-    def unfriend(self, friend_to_remove: str):
+    def unfriend(self, friend_to_remove: person):
         index_to_del = self.friend_list.index(friend_to_remove.Name)
         self.friend_list.__delitem__(index_to_del)
 
