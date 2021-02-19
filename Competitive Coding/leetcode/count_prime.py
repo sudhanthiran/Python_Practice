@@ -47,4 +47,3 @@ class Solution:
 
 
 print(Solution.countPrimes(self=Solution,n=3))
-

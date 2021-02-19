@@ -3,6 +3,20 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\Competitive Coding\Amazon Interview Prep\Max Mismatches.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Competitive Coding\Amazon Interview Prep\Program 1.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Competitive Coding\leetcode\Buddy_Strings.py">
           <value>
             <Attribute>
